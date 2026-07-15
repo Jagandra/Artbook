@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Book | A Curated Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importing Sophisticated Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #F9F7F3; 
+            font-family: 'Inter', sans-serif; 
+            color: #2D2926; 
+        }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .gallery-item { transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .gallery-item:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <nav class="pt-20 pb-10 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4">ART BOOK</h1>
+        <p class="text-gray-500 italic max-w-lg mx-auto font-light">Bringing the quiet focus of a museum to the digital world.</p>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section class="max-w-3xl mx-auto px-8 py-10 text-center border-t border-b border-stone-200">
+        <h2 class="text-2xl font-semibold mb-6">Curated Fine Art</h2>
+        <p class="text-stone-600 leading-relaxed font-light text-lg">
+            This digital space is designed to showcase traditional drawings and paintings exactly as they were meant to be seen—without the cropping, compression, or clutter of social media feeds.
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="max-w-6xl mx-auto px-8 py-16 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            
+            <!-- PORTRAIT -->
+            <div class="gallery-item bg-white p-6 shadow-sm border border-stone-100">
+                <img src="frame.jpg" alt="Portrait Series" class="w-full h-96 object-contain bg-stone-50">
+                <p class="mt-6 text-xs uppercase tracking-[0.2em] text-stone-400 text-center font-medium">Portrait Series</p>
+            </div>
+
+            <!-- TEMPLE -->
+            <div class="gallery-item bg-white p-6 shadow-sm border border-stone-100">
+                <img src="temple.jpg" alt="Architectural Study" class="w-full h-96 object-contain bg-stone-50">
+                <p class="mt-6 text-xs uppercase tracking-[0.2em] text-stone-400 text-center font-medium">Architectural Study</p>
+            </div>
+
+            <!-- PEACOCK -->
+            <div class="gallery-item bg-white p-6 shadow-sm border border-stone-100">
+                <img src="peacock.jpg" alt="Vibrant Acrylic" class="w-full h-96 object-contain bg-stone-50">
+                <p class="mt-6 text-xs uppercase tracking-[0.2em] text-stone-400 text-center font-medium">Vibrant Acrylic</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-16 border-t border-stone-200 bg-white">
+        <p class="text-stone-500 text-sm tracking-widest uppercase">Art Book Digital Gallery</p>
+        <p class="mt-2 text-stone-400 text-xs">Designed by Jagandra Selvamoorthi</p>
+    </footer>
+
+</body>
+</html>
